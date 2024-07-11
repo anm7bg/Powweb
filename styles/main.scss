@@ -1,0 +1,46 @@
+body {
+    .main-logo {
+        max-width: none;
+    }
+    .home-img {
+        width: 40%;
+        display: block;
+        margin: 50px auto;
+    }    
+    .posts {
+        >div {
+            display: inline-block;
+            width: 20%;
+            margin: 20px;
+            padding: 10px;
+        }
+    }
+    
+    .post-image {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        .home-img {
+            width: 100%;
+        }    
+        .posts {
+            >div {
+                display: block;
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+  }
+
+html.light {
+    body {
+        .post-page-title, .home-page-title {
+            color: #000;
+        }
+    }
+}
