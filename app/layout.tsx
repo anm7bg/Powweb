@@ -39,7 +39,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased bg-black-100",
           fontSans.variable,
         )}
       >
@@ -49,7 +49,7 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3">
+            <footer className="w-full flex items-center justify-center pt-3">
               {/* <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
@@ -59,7 +59,7 @@ export default function RootLayout({
                 <span className="text-default-600">Powered by</span>
                 <p className="text-primary">NextUI</p>
               </Link> */}
-              <div className='footer-area py-5'>
+              <div className='footer-area'>
                   <p className='text-[1.1rem] tracking-widest text-center text-blue-100'>
                       Copyright © 2014 - 2024 <br/>powwebs@gmail.com
                   </p >

@@ -7,10 +7,17 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import Image from "next/image";
+import { Spotlight } from "@/components/Spotlight";
 
 export default function Home() {
   return (
     <section className="flex flex-col items-center justify-center gap-4">
+            <div>
+                <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20
+                h-screen' fill='white' />
+                <Spotlight className='top-10 left-90 h-[80vh] w-[50vw]' fill='purple' />
+                <Spotlight className='top-28 left-80 h-[80vh] w-[50vh]' fill='blue' />
+            </div>
       <div className="hero p-[20px] text-[1.2rem]">
         <h1 className='home-page-title uppercase tracking-widest text-[1.5rem] text-center text-blue-100'>
             SEO | Изработка и поддръжка на уеб сайтове и SPA!
