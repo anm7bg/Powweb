@@ -2,28 +2,7 @@ import { fetchAPI } from "../../lib/base";
 
 export async function getPosts() {
   const data = await fetchAPI(
-    `query FetchPosts {
-        posts {
-          nodes {
-            excerpt
-            featuredImage {
-              node {
-                sourceUrl
-              }
-            }
-            slug
-            title
-          }
-        }
-      }`,
-    // {
-      // variables: {
-        // first,
-      // },
-    // }
-    // `query NewQuery {
-    //   category(id: "dGVybToz") {
-    //     id
+    // `query FetchPosts {
     //     posts {
     //       nodes {
     //         excerpt
@@ -36,11 +15,31 @@ export async function getPosts() {
     //         title
     //       }
     //     }
-    //   }
-    // }`
+    //   }`,
+    // {
+      // variables: {
+        // first,
+      // },
+    // }
+    `query FetchPosts {
+      category(id: "dGVybToz") {
+        posts {
+          nodes {
+            excerpt
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            slug
+            title
+          }
+        }
+      }
+    }`,
   );
 
-  return data?.posts?.nodes;
+  return data?.category?.posts?.nodes;
 }
 
 export async function getPostBySlug(slug: string) {
