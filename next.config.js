@@ -9,10 +9,26 @@ const nextConfig = {
     ],
   },
   async redirects() {
+    console.log("redirects")
       return [
       {
         source: '/seo-optimizatsia',
         destination: '/seo',
+        permanent: true,
+      },
+      {
+        source: '/author/anm7',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/seo-2017',
+        destination: '/seo-2017-osnovni-komponenti-na-tarseneto',
+        permanent: true,
+      },
+      {
+        source: '/bezplaten-analiz/',
+        destination: '/bezplaten-analiz',
         permanent: true,
       },
     ]

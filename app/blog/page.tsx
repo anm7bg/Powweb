@@ -1,11 +1,9 @@
 import Link from 'next/link';
-import { blogCard } from '@/app/lib/interface';
-
-
 import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card';
 import Image from 'next/image';
 import { Button } from '@nextui-org/button';
-import { getPosts } from '../lib/service';
+import { blogCard } from '@/lib/interface';
+import { getPosts } from '@/lib/service';
 
 const BlogPage = async () => {
 	const posts: blogCard[] = await getPosts();

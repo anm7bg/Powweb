@@ -1,4 +1,4 @@
-import { fetchAPI } from "../../lib/base";
+import { fetchAPI } from "./base";
 
 export async function getPosts() {
   const data = await fetchAPI(

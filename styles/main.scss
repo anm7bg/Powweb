@@ -1,4 +1,11 @@
 body {
+    .style-none  {
+        list-style: none;
+        padding: 0;
+        li{
+            margin: 15px 0;
+        }
+    }
     .main-logo {
         max-width: none;
     }

@@ -1,9 +1,7 @@
- 
-import { blogCard } from "@/app/lib/interface";
-
-import Image from "next/image";
-import { getPostBySlug, getPosts } from "../lib/service";
+ import Image from "next/image";
 import { apiUrl } from "@/env";
+import { blogCard } from "@/lib/interface";
+import { getPostBySlug, getPosts } from "@/lib/service";
 
 export const dynamicParams = true;
 
