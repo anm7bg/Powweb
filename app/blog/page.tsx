@@ -10,8 +10,8 @@ import { getPosts } from '../lib/service';
 const BlogPage = async () => {
 	const posts: blogCard[] = await getPosts();
 
-	console.log("Posts")
-	console.log(posts)
+	// console.log("Posts")
+	// console.log(posts)
 
 	return (
         // <p>Loading</p>

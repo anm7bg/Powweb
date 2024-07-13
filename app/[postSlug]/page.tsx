@@ -3,17 +3,18 @@ import { blogCard } from "@/app/lib/interface";
 
 import Image from "next/image";
 import { getPostBySlug, getPosts } from "../lib/service";
+import { apiUrl } from "@/env";
 
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
 	const response = await getPosts()
-	console.log("Response")
-	console.log(response)
-	// const posts = await response.json();
+	// console.log("Response")
+	// console.log(response)
+	// const posts = await response;
 
     // console.log("Posts")
-    // console.log(posts)
+    // console.log(response)
 
 	return response.map((post: any) => ({
 		// postId: post.id.toString(),
@@ -21,29 +22,25 @@ export async function generateStaticParams() {
 	}));
 }
 
-// async function getSinglePost(postId: string) {
+async function getSinglePost(postId: string) {
 
-// 	const response = await fetch(
+	const response = await fetch(
 
-// 		`${apiUrl}/posts/${postId}`
-// 	);
-// 	const post = await response.json();
-// 	return post;
-// }
+		`${apiUrl}/posts/${postId}`
+	);
+	const post = await response.json();
+	return post;
+}
 
 const Page = async ( {params}: {params: {postSlug: string}} ) => {
 
 	console.log("Params")
-	console.log(params)
+	console.log(params.postSlug)
 
 	const post: blogCard  = await getPostBySlug(params.postSlug);
 
     console.log('Post2')
     console.log(post)
-
-	// const postContent = post.content
-	// console.log("postContent")
-	// console.log(postContent)
 
 	if (!post) {
 		return <div>Loading...</div>;

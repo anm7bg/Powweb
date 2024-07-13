@@ -12,7 +12,7 @@ export async function fetchAPI(
       method: "POST",
       body: JSON.stringify({
         query,
-        // variables,
+        variables,
       }),
     });
   
