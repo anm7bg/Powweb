@@ -25,8 +25,7 @@ import {
   SearchIcon,
   // Logo,
 } from "@/components/icons";
-
-import Logo from "./Logo";
+import Logo from "@/components/Logo";
 
 export const Navbar = () => {
   const searchInput = (
@@ -42,7 +41,7 @@ export const Navbar = () => {
         </Kbd>
       }
       labelPlacement="outside"
-      placeholder="Search..."
+      placeholder="Търси..."
       startContent={
         <SearchIcon className="text-base text-default-400 pointer-events-none flex-shrink-0" />
       }
@@ -126,10 +125,10 @@ export const Navbar = () => {
                   index === 2
                     ? "primary"
                     : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
+                      ? "primary"
                       : "foreground"
                 }
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}
