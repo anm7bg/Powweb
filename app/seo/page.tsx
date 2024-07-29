@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div>
+    <div className="page-seo">
       <h1 className={title()}>SEO</h1>
+      <Image className="page-img aligncenter" src={"https://powweb.space/wp-content/uploads/2024/07/analiz.jpg"} width={700} height={406} alt="SEO от Powweb.bg"/>
       <h2 className="text-center">Каквo е SEO?</h2>
-      <Image className="page-img" src={"https://powweb.space/wp-content/uploads/2024/07/analiz.jpg"} width={700} height={406} alt="SEO от Powweb.bg"/>
       <p>SEO (Search Engine Optimisation) е акроним, който се отличава с оптимизацията за търсачки.</p>
       <p>Това е стратегия, използвана от собствениците на уеб сайтове, за да получaт по-голям трафик, като се класират по-високо в търсачките.</p>
       <p>Оптимизирането на търсещите машини не е измама на Google. Това е просто създаване на уеб сайт, който има оптимизиран код, който улеснява търсачките да го намерят.</p>

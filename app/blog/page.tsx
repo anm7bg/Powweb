@@ -39,7 +39,7 @@ const BlogPage = async () => {
                             </CardBody>
                             <CardFooter>
                                 <Button className='w-full mt7'>
-                                    <Link href={`${post.slug}`}>Виж</Link>
+                                    <Link className='post-link' href={`${post.slug}`}>Виж</Link>
                                 </Button>
                             </CardFooter>
                         </Card>
