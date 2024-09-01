@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       disallow: ['/private/', '/grid/', '/?wordfence*'],
       // disallow: '/grid/',
     },
-    sitemap: 'https://powweb.bg/index-sitemap.xml',
+    sitemap: 'https://powweb.bg/sitemap.xml',
   }
 }
