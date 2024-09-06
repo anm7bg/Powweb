@@ -36,6 +36,31 @@ const nextConfig = {
         destination: '/ustoychivi-url-adresi-za-seo',
         permanent: true,
       },
+      {
+        source: '/post/osnovni-principi-na-razbiraneto-za-seo/',
+        destination: '/osnovni-printsipi-na-razbiraneto-za-seo',
+        permanent: true,
+      },
+      {
+        source: '/post/wordpress-reshavane-na-problema-s-blokirashite-izobrazyavaneto-javascript-i-css/',
+        destination: '/blokirashtite-izobrazyavaneto-javascript-i-css-wordpress',
+        permanent: true,
+      },
+      {
+        source: '/post/seo-2017-osnovni-pravila-za-dominirane-v-rezultatite-ot-trseneto-s-google/',
+        destination: '/seo-2017-osnovni-pravila',
+        permanent: true,
+      },
+      {
+        source: '/post/seo-2017-osnovni-komponenti-na-trseneto/',
+        destination: '/ustoychivi-url-adresi-za-seo',
+        permanent: true,
+      },
+      {
+        source: '/url-adresi-za-seo/',
+        destination: '/ustoychivi-url-adresi-za-seo',
+        permanent: true,
+      },
     ]
   },
 }

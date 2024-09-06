@@ -4,7 +4,7 @@ export async function getPosts() {
   const data = await fetchAPI(
     `query FetchPosts {
       category(id: "dGVybToz") {
-        posts {
+        posts(first: 100) {
           nodes {
             excerpt
             featuredImage {
