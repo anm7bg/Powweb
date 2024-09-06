@@ -55,12 +55,12 @@ const nextConfig = {
         source: '/post/seo-2017-osnovni-komponenti-na-trseneto/',
         destination: '/ustoychivi-url-adresi-za-seo',
         permanent: true,
-      },
-      {
-        source: '/url-adresi-za-seo/',
-        destination: '/ustoychivi-url-adresi-za-seo',
-        permanent: true,
-      },
+      }
+      // {
+      //   source: '/url-adresi-za-seo/',
+      //   destination: '/ustoychivi-url-adresi-za-seo',
+      //   permanent: true,
+      // },
     ]
   },
 }
