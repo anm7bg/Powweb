@@ -8,6 +8,11 @@ const nextConfig = {
       },
     ],
   },
+}
+
+module.exports = nextConfig
+
+module.exports = {
   async redirects() {
     console.log("redirects")
       return [
@@ -62,7 +67,5 @@ const nextConfig = {
       //   permanent: true,
       // },
     ]
-  },
+  }
 }
-
-module.exports = nextConfig
