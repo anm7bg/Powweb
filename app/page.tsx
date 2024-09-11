@@ -22,7 +22,7 @@ export default function Home() {
         <h1 className='home-page-title uppercase tracking-widest text-[1.5rem] text-center text-blue-100'>
             SEO | Изработка и поддръжка на уеб сайтове и SPA!
         </h1 >
-        <Image className="rounded home-img" src={"https://powweb.space/wp-content/uploads/2024/07/analiz.jpg"} width={848} height={300} alt="SEO | Изработка и поддръжка на уеб сайтове и SPA!" />
+        <Image className="rounded home-img" src={"https://data.powweb.space/wp-content/uploads/2024/09/analiz.jpg"} width={848} height={300} alt="SEO | Изработка и поддръжка на уеб сайтове и SPA!" />
         <h2 className="text-center text-[1.7rem]">
           Професионално инсталиране, конфигуриране, оптимизиране, поддръжка и SEO, за сайтове, електронни магазини и SPA. React / Next js И WordPress на достъпни цени!
         </h2>

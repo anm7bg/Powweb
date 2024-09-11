@@ -3,7 +3,27 @@ import { fetchAPI } from "./base";
 export async function getPosts() {
   const data = await fetchAPI(
     `query FetchPosts {
-      category(id: "dGVybToz") {
+      posts(first: 100) {
+        nodes {
+          excerpt
+          featuredImage {
+            node {
+              sourceUrl
+            }
+          }
+          slug
+          title
+        }
+      }
+    }`,
+  );
+  return data?.posts?.nodes;
+}
+
+export async function getSeoPosts() {
+  const data = await fetchAPI(
+    `query FetchPosts {
+      category(id: "dGVybToyMA==") {
         posts(first: 100) {
           nodes {
             excerpt
@@ -23,6 +43,7 @@ export async function getPosts() {
 
   return data?.category?.posts?.nodes;
 }
+
 
 export async function getPostBySlug(postSlug: string) {
   const data = await fetchAPI(
