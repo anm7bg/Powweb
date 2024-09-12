@@ -1,5 +1,12 @@
 body {
-    h-screen {
+    .glow-home, .home-img, .home-wrap {
+        border-radius: .75rem;
+    }
+    .glow-home {
+        width: 70.7%;
+        height: 550px;
+    }
+    .h-screen {
         height: max-content;
     }
     .stars {
@@ -68,9 +75,9 @@ body {
             transform: scale(0.95);
         }
     }
-    .home-wrap {
+    .home-wrap, .home-wrap-dark {
         position: relative;
-        &::before {
+        &:before {
             @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
             content: "";
         }
@@ -157,8 +164,24 @@ body {
 
 html.light {
     body {
+        .home-wrap {
+            display: block;
+        }
+        .home-wrap-dark {
+            display: none;
+        }
         .post-page-title, .home-page-title {
             color: #000;
+        }
+    }
+}
+html.dark {
+    body {
+        .home-wrap {
+            display: none;
+        }
+        .home-wrap-dark {
+            display: block;
         }
     }
 }
