@@ -1,4 +1,5 @@
 import { title } from "@/components/primitives";
+import StarGrid from "@/components/StarGrid";
 import Image from "next/image";
 
 export default function AboutPage() {

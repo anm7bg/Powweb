@@ -1,4 +1,11 @@
 body {
+    h-screen {
+        height: max-content;
+    }
+    .stars {
+        width: 100%;
+        left: 0;
+    }
     ul.styled {
         padding-left: 20px;
         li {
