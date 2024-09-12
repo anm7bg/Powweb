@@ -68,6 +68,13 @@ body {
             transform: scale(0.95);
         }
     }
+    .home-wrap {
+        position: relative;
+        &::before {
+            @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
+            content: "";
+        }
+    }
     .home-img {
         width: 40%;
         display: block;
