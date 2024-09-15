@@ -1,21 +1,12 @@
-import Link from 'next/link';
-
-
-// import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card';
-import Image from 'next/image';
-import { Button } from '@nextui-org/button';
-import { getWordpressPosts} from '@/lib/service';
-import { Card, CardBody, CardFooter, CardHeader } from '@nextui-org/card'; 
+import { getWpPosts} from '@/lib/service';
 import { blogCard } from '@/lib/interface';
-import PostCatMenu from '@/components/PostCatMenu';
 import AnimatedPost from '@/components/AnimatedPosts';
-// import SideNav from '@/components/side-nav';
 
 const WpPublikacii = async () => {
-	const posts: blogCard[] = await getWordpressPosts();
+	const posts: blogCard[] = await getWpPosts();
 
-	// console.log("Posts2")
-	// console.log(posts2)
+	console.log("Posts2")
+	console.log(posts)
 
 	return (
         // <p>Loading</p>

@@ -44,7 +44,7 @@ export async function getSeoPosts() {
   return data?.category?.posts?.nodes;
 }
 
-export async function getWordpressPosts() {
+export async function getWpPosts() {
   const data = await fetchAPI(
     `query FetchPosts {
       category(id: "dGVybToz") {

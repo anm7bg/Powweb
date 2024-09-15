@@ -10,6 +10,8 @@ import PostCatMenu from '@/components/PostCatMenu';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import PostPageTitle from "./PostPageTitle";
+import StarGrid from "./StarGrid";
+import { Spotlight } from "./Spotlight";
 
 
 export default function AnimatedPost(props:any) {
@@ -25,9 +27,9 @@ let title = props.title;
     useGSAP(()=>{
         const tl = gsap.timeline({defaults: {ease: "power2.inOut"}})
 
-        tl.fromTo(".post__title", {scale:0.5}, {scale:1, opacity:1});
-        tl.fromTo(".post__menu", {y:20}, {y:0, opacity:1});
-        tl.fromTo(".post__body", {scale:0.5}, {scale:1, opacity:1});
+        // tl.fromTo(".post__title", {scale:0.5}, {scale:1, opacity:1});
+        // tl.fromTo(".post__menu", {y:20}, {y:0, opacity:1});
+        tl.fromTo(".post__body", {y:20}, {y:0, opacity:1});
         // tl.fromTo(".hero__glow", {scale:0.5}, {scale:1, opacity:1});
 
 
@@ -36,7 +38,14 @@ let title = props.title;
     console.log(props.title)
     return (
         <div ref={container}>
-             <h1 className='post__title opacity-0 page-title uppercase tracking-widest text-[1.5rem] text-center text-blue-100'>
+               <StarGrid />
+            <div>
+                <Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20
+                h-screen' fill='white' />
+                <Spotlight className='top-10 left-90 h-[80vh] w-[50vw]' fill='purple' />
+                <Spotlight className='top-28 left-80 h-[80vh] w-[50vh]' fill='blue' />
+            </div>
+             <h1 className='post__title page-title uppercase tracking-widest text-[1.5rem] text-center text-blue-100'>
             {title}
         </h1 >
             <PostCatMenu />
