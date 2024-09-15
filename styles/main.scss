@@ -8,12 +8,18 @@ body {
             }
         }
     }
-    .glow-home, .home-img, .home-wrap {
+    .glow-home, .glow-post, .home-img, .home-wrap, .post-wrap, .home-wrap-dark, .post-wrap-dark {
         border-radius: .75rem;
     }
     .glow-home {
         width: 70.7%;
         height: 550px;
+    }
+    .glow-post {
+        width: 100%;
+        height: 1000px;
+        top: 0;
+        left: 0;
     }
     .h-screen {
         height: max-content;
@@ -88,6 +94,13 @@ body {
         position: relative;
         &:before {
             @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
+            content: "";
+        }
+    }
+    .post-wrap, .post-wrap-dark {
+        position: relative;
+        &:before {
+            @apply absolute inset-[25px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
             content: "";
         }
     }
@@ -173,10 +186,10 @@ body {
 
 html.light {
     body {
-        .home-wrap {
+        .home-wrap, .post-wrap {
             display: block;
         }
-        .home-wrap-dark {
+        .home-wrap-dark, .post-wrap-dark {
             display: none;
         }
         .post-page-title, .page-title {
@@ -186,10 +199,10 @@ html.light {
 }
 html.dark {
     body {
-        .home-wrap {
+        .home-wrap, .post-wrap {
             display: none;
         }
-        .home-wrap-dark {
+        .home-wrap-dark, .post-wrap-dark {
             display: block;
         }
     }
