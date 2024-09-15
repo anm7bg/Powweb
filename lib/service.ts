@@ -44,6 +44,30 @@ export async function getSeoPosts() {
   return data?.category?.posts?.nodes;
 }
 
+export async function getWordpressPosts() {
+  const data = await fetchAPI(
+    `query FetchPosts {
+      category(id: "dGVybToz") {
+        posts(first: 100) {
+          nodes {
+            excerpt
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            slug
+            title
+            content
+          }
+        }
+      }
+    }`,
+  );
+
+  return data?.category?.posts?.nodes;
+}
+
 
 export async function getPostBySlug(postSlug: string) {
   const data = await fetchAPI(

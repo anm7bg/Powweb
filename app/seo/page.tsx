@@ -1,3 +1,4 @@
+import PostCatMenu from "@/components/PostCatMenu";
 import { title } from "@/components/primitives";
 import StarGrid from "@/components/StarGrid";
 import Image from "next/image";
@@ -6,6 +7,7 @@ export default function AboutPage() {
   return (
     <div className="page-seo">
       <h1 className={title()}>SEO</h1>
+      <PostCatMenu />
       <Image className="page-img aligncenter" src={"https://powweb.space/wp-content/uploads/2024/07/analiz.jpg"} width={700} height={406} alt="SEO от Powweb.bg"/>
       <h2 className="text-center">Каквo е SEO?</h2>
       <p>SEO (Search Engine Optimisation) е акроним, който се отличава с оптимизацията за търсачки.</p>

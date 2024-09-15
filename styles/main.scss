@@ -1,4 +1,13 @@
 body {
+    .post-menu {
+        li {
+            display: inline-block;
+            margin: 0 15px;
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
     .glow-home, .home-img, .home-wrap {
         border-radius: .75rem;
     }
@@ -170,7 +179,7 @@ html.light {
         .home-wrap-dark {
             display: none;
         }
-        .post-page-title, .home-page-title {
+        .post-page-title, .page-title {
             color: #000;
         }
     }
