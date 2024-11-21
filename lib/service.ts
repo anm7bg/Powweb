@@ -1,29 +1,101 @@
 import { fetchAPI } from "./base";
 
-export async function getPosts() {
+export async function getProekti() {
   const data = await fetchAPI(
     `query FetchPosts {
-      posts(first: 100) {
-        nodes {
-          excerpt
-          featuredImage {
-            node {
-              sourceUrl
+      category(id: "dGVybTo5") {
+        posts(first: 100) {
+          nodes {
+            excerpt
+            featuredImage {
+              node {
+                sourceUrl
+              }
             }
+            slug
+            title
+            content
           }
-          slug
-          title
         }
       }
     }`,
   );
-  return data?.posts?.nodes;
+  return data?.category?.posts?.nodes;
+}
+
+export async function getStores() {
+  const data = await fetchAPI(
+    `query FetchPosts {
+      category(id: "dGVybToxMA==") {
+        posts(first: 100) {
+          nodes {
+            excerpt
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            slug
+            title
+            content
+          }
+        }
+      }
+    }`,
+  );
+  return data?.category?.posts?.nodes;
+}
+
+export async function getBlogs() {
+  const data = await fetchAPI(
+    `query FetchPosts {
+      category(id: "dGVybToxMQ==") {
+        posts(first: 100) {
+          nodes {
+            excerpt
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            slug
+            title
+            content
+          }
+        }
+      }
+    }`,
+  );
+  return data?.category?.posts?.nodes;
+}
+
+export async function getPosts() {
+  const data = await fetchAPI(
+    `query FetchPosts {
+      category(id: "dGVybToz") {
+        posts(first: 100) {
+          nodes {
+            excerpt
+            featuredImage {
+              node {
+                sourceUrl
+              }
+            }
+            slug
+            title
+            content
+          }
+        }
+      }
+    }`,
+  );
+  return data?.category?.posts?.nodes;
 }
 
 export async function getSeoPosts() {
   const data = await fetchAPI(
     `query FetchPosts {
-      category(id: "dGVybToyMA==") {
+      category(id: "dGVybTo0") {
         posts(first: 100) {
           nodes {
             excerpt
@@ -47,7 +119,7 @@ export async function getSeoPosts() {
 export async function getWpPosts() {
   const data = await fetchAPI(
     `query FetchPosts {
-      category(id: "dGVybToz") {
+      category(id: "dGVybTo2") {
         posts(first: 100) {
           nodes {
             excerpt

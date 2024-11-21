@@ -11,6 +11,10 @@ module.exports = async (phase, { defaultConfig }) => {
         },
         {
           protocol: "https",
+          hostname: "powweb.space",
+        },
+        {
+          protocol: "https",
           hostname: "i0.wp.com",
         },
       ],

@@ -12,6 +12,7 @@ import { useGSAP } from "@gsap/react";
 import PostPageTitle from "./PostPageTitle";
 import StarGrid from "./StarGrid";
 import { Spotlight } from "./Spotlight";
+import ProektiCatMenu from "./ProektiCatMenu";
 
 
 export default function AnimatedPost(props:any) {
@@ -19,6 +20,10 @@ export default function AnimatedPost(props:any) {
 // export default function AnimatedContent({slice}: {slice:Content.HeroSlice} ) {
 
 let posts = props.posts;
+
+console.log("props.posts")
+console.log(props.posts)
+
 let title = props.title;
 
     const container = useRef(null);
@@ -49,6 +54,7 @@ let title = props.title;
                 {title}
             </h1 >
             <PostCatMenu />
+            <ProektiCatMenu />
             <div className="post__body opacity-0 post-wrap-dark p-[20px] mt-[20px]">
                 <div className="post__glow opacity-0 glow-post absolute -z-10 aspect-square w-full  bg-blue-400/20 blur-3xl filter" />
                 <div className="posts">
