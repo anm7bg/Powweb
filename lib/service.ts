@@ -15,6 +15,9 @@ export async function getProekti() {
             slug
             title
             content
+             url {
+              projectLink
+            }
           }
         }
       }

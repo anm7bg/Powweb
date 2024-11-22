@@ -61,6 +61,8 @@ let title = props.title;
                     {posts.map((post: any, idx: number) => {
                         console.log("Post")
                         console.log(post)
+                        console.log("Post url")
+                        console.log(post.url)
                         return (
                             <Card className='mb-[20px]' key={idx}>
                                 <Image 
@@ -77,8 +79,11 @@ let title = props.title;
                                     <p className='line-clamp-2 text-sm'>{post.shortDesc}</p>
                                 </CardBody>
                                 <CardFooter>
-                                    <Button className='w-full mt7'>
+                                    <Button className='w-full mt7 post-button'>
                                         <Link className='post-link' href={`${post.slug}`}>Виж</Link>
+                                    </Button>
+                                    <Button className='w-full mt7 projects-button'>
+                                        <Link target="_blank" rel="nofollow" className='post-link' href={`${post.url.projectLink}`}>Виж</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
