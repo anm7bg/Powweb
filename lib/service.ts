@@ -4,7 +4,7 @@ export async function getProekti() {
   const data = await fetchAPI(
     `query FetchPosts {
       category(id: "dGVybTo5") {
-        posts(first: 100) {
+        posts(first: 100, where: {orderby: {field: DATE, order: ASC}}) {
           nodes {
             excerpt
             featuredImage {
@@ -30,7 +30,7 @@ export async function getStores() {
   const data = await fetchAPI(
     `query FetchPosts {
       category(id: "dGVybToxMA==") {
-        posts(first: 100) {
+        posts(first: 100, where: {orderby: {field: DATE, order: ASC}}) {
           nodes {
             excerpt
             featuredImage {
@@ -53,7 +53,7 @@ export async function getBlogs() {
   const data = await fetchAPI(
     `query FetchPosts {
       category(id: "dGVybToxMQ==") {
-        posts(first: 100) {
+        posts(first: 100, where: {orderby: {field: DATE, order: ASC}}) {
           nodes {
             excerpt
             featuredImage {
