@@ -41,6 +41,9 @@ export async function getStores() {
             slug
             title
             content
+              url {
+              projectLink
+            }
           }
         }
       }
@@ -64,6 +67,9 @@ export async function getBlogs() {
             slug
             title
             content
+              url {
+              projectLink
+            }
           }
         }
       }
