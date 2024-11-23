@@ -72,11 +72,11 @@ let title = props.title;
                                     height={400}
                                     className='rounded-t-lg object-cover'
                                 />
-                                <CardHeader className='py-[5px] my-[5px] blog-card-head'>
+                                <CardHeader className='project-title py-[5px] my-[5px] blog-card-head'>
                                     <h3 className='text-center text-lg line-clamp-2'>{post.title}</h3>
                                 </CardHeader>
                                 <CardBody className='p-[5px]'>
-                                    <p className='line-clamp-2 text-sm'>{post.shortDesc}</p>
+                                    <p dangerouslySetInnerHTML={{ __html: post.content }} className='project-content line-clamp-2 text-sm'></p>
                                 </CardBody>
                                 <CardFooter>
                                     <Button className='w-full mt7 projects-button'>

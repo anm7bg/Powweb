@@ -1,4 +1,10 @@
 body {
+    .project-title {
+        display: block;
+    }
+    .project-content {
+        height: 100px;
+    }
     .post-menu, .proekti-menu {
         li {
             display: inline-block;
