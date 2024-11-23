@@ -82,9 +82,11 @@ let title = props.title;
                                     <Button className='w-full mt7 post-button'>
                                         <Link className='post-link' href={`${post.slug}`}>Виж</Link>
                                     </Button>
-                                    <Button className='w-full mt7 projects-button'>
-                                        <Link target="_blank" rel="nofollow" className='post-link' href={`${post.url.projectLink}`}>Виж</Link>
-                                    </Button>
+                                    if (post.url) {
+                                        <Button className='w-full mt7 projects-button'>
+                                            <Link target="_blank" rel="nofollow" className='post-link' href={`${post.url.projectLink}`}>Виж</Link>
+                                        </Button>
+                                    }
                                 </CardFooter>
                             </Card>
                         );
