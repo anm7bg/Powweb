@@ -15,7 +15,7 @@ import { Spotlight } from "./Spotlight";
 import ProektiCatMenu from "./ProektiCatMenu";
 
 
-export default function AnimatedPost(props:any) {
+export default function AnimatedProjects(props:any) {
     // export default function AnimatedPost({posts}:any, {postTitle}: {postTitle: string}) {
 // export default function AnimatedContent({slice}: {slice:Content.HeroSlice} ) {
 
@@ -80,7 +80,7 @@ let title = props.title;
                                 </CardBody>
                                 <CardFooter>
                                     <Button className='w-full mt7 projects-button'>
-                                        <Link target="_blank" rel="nofollow" className='post-link' href={`${post.slug}`}>Виж</Link>
+                                        <Link target="_blank" rel="nofollow" className='post-link' href={`${post.url.projectLink}`}>Виж</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>

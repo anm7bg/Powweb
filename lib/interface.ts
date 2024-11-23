@@ -6,6 +6,8 @@ export interface blogCard {
     excerpt: any;
     content: any;
     slug: string;
-    featuredImage: any
+    featuredImage: any;
+    url: any;
+    projectLink: any;
     // rendered: any;
 }

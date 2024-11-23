@@ -1,5 +1,5 @@
+import AnimatedProjects from '@/components/AnimatedProjects';
 import { blogCard } from '@/lib/interface';
-import AnimatedPost from '@/components/AnimatedPosts';
 import { getProekti } from '@/lib/service';
 
 
@@ -11,7 +11,7 @@ const BlogPage = async () => {
     return (
         // <p>Loading</p>
 		<div className="proekti-page">
-            <AnimatedPost posts={posts} title="Проекти"/>
+            <AnimatedProjects posts={posts} title="Проекти"/>
 			<p>Открийте реализираните уеб проекти от Powweb.bg – вашият доверен партньор в уеб дизайна и разработката. Вдъхновете се от иновативни решения, модерни дизайни и професионални услуги, които превръщат идеите в успешни онлайн платформи. Разгледайте нашето портфолио от сайтове за бизнес, е-търговия и персонализирани проекти. С Powweb.bg мечтите ви стават реалност!</p>
 		</div>
 	);
