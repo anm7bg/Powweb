@@ -53,7 +53,7 @@ module.exports = async (phase, { defaultConfig }) => {
           permanent: true,
         },
         {
-          source: '/optimizirane-na-wordpress-sait-s-w3-total-cache',
+          source: '/optimizirane-na-wordpress-sait-s-w3-total-cache/',
           destination: '/optimizirane-na-wordpress',
           permanent: true,
         },

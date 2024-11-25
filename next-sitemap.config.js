@@ -12,7 +12,8 @@ const exclude = [
   '/?wordfence*',
   '/about*',
   '/docs*',
-  '/pricing*'
+  '/pricing*',
+  '/author*'
 ];
  
 // Save crawling budget by not fetching SSG meta files
