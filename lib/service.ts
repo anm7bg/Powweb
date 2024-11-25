@@ -56,7 +56,7 @@ export async function getBlogs() {
   const data = await fetchAPI(
     `query FetchPosts {
       category(id: "dGVybToxMQ==") {
-        posts(first: 100, where: {orderby: {field: DATE, order: ASC}}) {
+        posts(first: 100, where: {orderby: {field: DATE, order: DESC}}) {
           nodes {
             excerpt
             featuredImage {
