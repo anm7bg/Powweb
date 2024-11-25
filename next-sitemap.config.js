@@ -13,7 +13,8 @@ const exclude = [
   '/about*',
   '/docs*',
   '/pricing*',
-  '/author*'
+  '/author*',
+  '/kontakti'
 ];
  
 // Save crawling budget by not fetching SSG meta files
