@@ -11,7 +11,7 @@ export default function AboutPage() {
         width={700}
         height={300}
         alt="SEO термини"
-        priority
+        unoptimized
       />
       <h1 className="text-center">SEO Термини</h1>
       <h2>SEO термини и Обяснения за услугата Search Engine Optimization (SEO)</h2>
