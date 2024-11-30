@@ -71,6 +71,7 @@ let title = props.title;
                                     width={600} 
                                     height={400}
                                     className='rounded-t-lg object-cover'
+                                    unoptimized
                                 />
                                 <CardHeader className='py-[5px] my-[5px] blog-card-head'>
                                     <h3 className='text-center text-lg line-clamp-2'>{post.title}</h3>
@@ -80,7 +81,7 @@ let title = props.title;
                                 </CardBody>
                                 <CardFooter>
                                     <Button className='w-full mt7 projects-button'>
-                                        <Link target="_blank" rel="nofollow" className='post-link' href={`${post.slug}`}>Виж</Link>
+                                        <Link className='post-link' href={`${post.slug}`}>Виж</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
