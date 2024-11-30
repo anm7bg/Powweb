@@ -6,14 +6,15 @@ import Image from "next/image";
 export default function AboutPage() {
   return (
     <div className="page-seo">
+      <h1 className="text-center">SEO Термини</h1>
       <Image
-        src={"https://i.postimg.cc/6qxjttLk/seo-termini.jpg"}
+        className="page-img"
+        src={"/seo-termini.jpg"}
         width={700}
         height={300}
         alt="SEO термини"
         unoptimized
       />
-      <h1 className="text-center">SEO Термини</h1>
       <h2>SEO термини и Обяснения за услугата Search Engine Optimization (SEO)</h2>
       <p>Тази статия има за цел да подпомогне нашите читатели и клиенти,да разберат какво означават част от термините използвани от SEO Оптимизаторите при SEO Оптимизацията на вашия уеб сайт.</p>
       <p>Ето един малък списък със  SEO Термини,които се надяваме да ви помогнат и обяснят какво точно  означават те и какво правят. Това ще ви даде основни познания в постоянно променящия се свят на търсачките и начините за оптимизация на вашия уеб сайт, като част от тези SEO Термини остават  сравнително постоянни.</p>
