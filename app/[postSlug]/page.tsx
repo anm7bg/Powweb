@@ -58,6 +58,7 @@ const Page = async ( {params}: {params: {postSlug: string}} ) => {
 				width={600} 
 				height={400}
 				className='post-image rounded-t-lg object-cover'
+				unoptimized
 			/>
 			<div className="blog-post mt-[50px]">
 				<p dangerouslySetInnerHTML={{ __html: post.content }}></p>
