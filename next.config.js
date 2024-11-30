@@ -17,6 +17,10 @@ module.exports = async (phase, { defaultConfig }) => {
           protocol: "https",
           hostname: "i0.wp.com",
         },
+        {
+          protocol: "https",
+          hostname: "postimg.cc",
+        },
       ],
     },
     async redirects() {
