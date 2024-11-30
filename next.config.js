@@ -19,7 +19,7 @@ module.exports = async (phase, { defaultConfig }) => {
         },
         {
           protocol: "https",
-          hostname: "postimg.cc",
+          hostname: "i.postimg.cc",
         },
       ],
     },
