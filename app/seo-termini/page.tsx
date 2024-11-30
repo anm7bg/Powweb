@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <div className="page-seo">
       <Image
-        src={"/seo-termini.jpg"}
+        src={"https://i.postimg.cc/6qxjttLk/seo-termini.jpg"}
         width={700}
         height={300}
         alt="SEO термини"
