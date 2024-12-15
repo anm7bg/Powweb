@@ -37,23 +37,48 @@ module.exports = async (phase, { defaultConfig }) => {
           permanent: true,
         },
         {
-          source: '/seo-2017/',
+          source: '/seo-2017',
           destination: '/seo-2017-osnovni-komponenti-na-tarseneto',
           permanent: true,
         },
         {
-          source: '/bezplaten-analiz/',
+          source: '/post/seo-2017-osnovni-komponenti-na-trseneto',
+          destination: '/seo-2017-osnovni-komponenti-na-tarseneto',
+          permanent: true,
+        },
+        {
+          source: '/post/seo-2017-osnovni-pravila-za-dominirane-v-rezultatite-ot-trseneto-s-google',
+          destination: '/seo-2017-osnovni-pravila',
+          permanent: true,
+        },
+        {
+          source: '/post/wordpress-reshavane-na-problema-s-blokirashite-izobrazyavaneto-javascript-i-css',
+          destination: '/blokirashtite-izobrazyavaneto-javascript-i-css-wordpress',
+          permanent: true,
+        },
+        {
+          source: '/post/seo-tendencii-koito-ni-ochakvat-prez-2018-ta-godina',
+          destination: '/seo-tendentsii-2018',
+          permanent: true,
+        },
+        {
+          source: '/post/seo-tendencii-koito-ni-ochakvat-prez-2018-ta-godina',
+          destination: '/seo-tendentsii-2018',
+          permanent: true,
+        },
+        {
+          source: '/bezplaten-analiz',
           destination: '/bezplaten-analiz',
           permanent: true,
         },
         {
-          source: '/url-adresi-za-seo/',
+          source: '/url-adresi-za-seo',
           destination: '/ustoychivi-url-adresi-za-seo',
           permanent: true,
         },
         {
-          source: '/post/slug',
-          destination: '/slug',
+          source: '/post/osnovni-principi-na-razbiraneto-za-seo',
+          destination: '/osnovni-printsipi-na-razbiraneto-za-seo',
           permanent: true,
         },
         {
@@ -62,7 +87,7 @@ module.exports = async (phase, { defaultConfig }) => {
           permanent: true,
         },
         {
-          source: '/bezplaten-analiz/',
+          source: '/bezplaten-analiz',
           destination: '/',
           permanent: true,
         }
