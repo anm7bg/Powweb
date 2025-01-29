@@ -1,4 +1,13 @@
 body {
+    .uslugi {
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.5rem;
+            padding: 5px 0;
+        }
+    }
     .page-img {
         display: block;
         margin: 50px auto;
