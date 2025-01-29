@@ -9,10 +9,10 @@ module.exports = async (phase, { defaultConfig }) => {
           protocol: "https",
           hostname: "data.powweb.space",
         },
-        {
-          protocol: "https",
-          hostname: "powweb.bg",
-        },
+        // {
+        //   protocol: "https",
+        //   hostname: "powweb.bg",
+        // },
         {
           protocol: "https",
           hostname: "powweb.space",
