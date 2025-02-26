@@ -16,6 +16,10 @@ export const siteConfig = {
       label: "Публикации",
       href: "/blog",
     },
+    {
+      label: "Промоции",
+      href: "/promocii",
+    },
   ],
   navMenuItems: [
     {
@@ -29,6 +33,10 @@ export const siteConfig = {
     {
       label: "Публикации",
       href: "/blog",
+    },
+    {
+      label: "Промоции",
+      href: "/promocii",
     },
     // {
     //   label: "Projects",
