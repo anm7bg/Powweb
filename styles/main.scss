@@ -1,4 +1,16 @@
 body {
+    .promocii {
+        h3 {
+            font-size: 2rem;
+        }
+        ul {
+            margin-left: 20px;
+            li {
+                list-style: disc;
+                text-align: left;
+            }
+        }
+    }
     .uslugi {
         h1 {
             font-size: 2rem;
