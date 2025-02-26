@@ -2,14 +2,19 @@ body {
     .promocii {
         h3 {
             font-size: 2rem;
+            padding: 20px;
         }
         ul {
-            margin-left: 20px;
+            border-bottom: 2px groove #fff;
             li {
                 list-style: disc;
                 text-align: left;
+                padding: 20px;
             }
         }
+        // ul:first-of-type {
+            
+        // }
     }
     .uslugi {
         h1 {
