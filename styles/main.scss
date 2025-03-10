@@ -24,6 +24,9 @@ body {
             font-size: 1.5rem;
             padding: 5px 0;
         }
+        // >div {
+        //     display: block;
+        // }
     }
     .page-img {
         display: block;
@@ -135,6 +138,17 @@ body {
     }
     .post-wrap, .post-wrap-dark {
         position: relative;
+        &:before {
+            @apply absolute inset-[25px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
+            content: "";
+        }
+    }
+    .home-wrap-light {
+        position: relative;
+        background: #214C86;
+        color: #fff;
+        padding: 50px;
+        border-radius: 15px;
         &:before {
             @apply absolute inset-[25px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
             content: "";
