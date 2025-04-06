@@ -43,7 +43,7 @@ export default function AnimatedContent() {
              
               <div className="hero__body opacity-0 home-wrap-dark bg-gradient-to-b from-gray-900 to-gray-95 p-[20px]">
               <h2 className="text-center text-[1.7rem]">
-                      Цената е валидна до края на Март!!!
+                      Цената е валидна до края на Април!!!
                   </h2>
                   <p className="text-center">Здравейте, промоцията включва изработване на сайт с базова функционалност и брой страници.</p>
                   <h3>Какво е включено в цената?</h3>
