@@ -261,7 +261,7 @@ html.light {
 }
 html.dark {
     body {
-        .home-wrap, .post-wrap {
+        .home-wrap, .home-wrap-light, .post-wrap {
             display: none;
         }
         .home-wrap-dark, .post-wrap-dark {
