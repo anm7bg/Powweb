@@ -46,7 +46,7 @@ export default function AnimatedContent() {
                 <h1 className='hero__heading opacity-0 page-title uppercase tracking-widest text-[1.5rem] text-center text-blue-100'>
                     SEO | Изработка и поддръжка на уеб сайтове и SPA!
                 </h1 >
-                <Image className="hero__img opacity-0 home-img" src={"https://data.powweb.space/wp-content/uploads/2024/09/analiz.jpg"} width={848} height={300} alt="SEO | Изработка и поддръжка на уеб сайтове и SPA!" />
+                <Image className="hero__img opacity-0 home-img" src={"https://data.powweb.site/wp-content/uploads/2024/09/analiz.jpg"} width={848} height={300} alt="SEO | Изработка и поддръжка на уеб сайтове и SPA!" />
                 <div className="hero__glow opacity-0 glow-home absolute -z-10 aspect-square w-full  bg-blue-400/20 blur-3xl filter" />
                 <div className="hero__body opacity-0 home-wrap p-[20px]">
                     <h2 className="text-center text-[1.7rem]">
