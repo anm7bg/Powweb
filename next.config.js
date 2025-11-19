@@ -7,7 +7,7 @@ module.exports = async (phase, { defaultConfig }) => {
       remotePatterns: [
         {
           protocol: "https",
-          hostname: "data.powweb.space",
+          hostname: "data.powweb.site",
         },
         // {
         //   protocol: "https",
@@ -15,7 +15,7 @@ module.exports = async (phase, { defaultConfig }) => {
         // },
         {
           protocol: "https",
-          hostname: "powweb.space",
+          hostname: "powweb.site",
         },
         {
           protocol: "https",
