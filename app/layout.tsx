@@ -62,7 +62,7 @@ export default function RootLayout({
               </Link> */}
               <div className='footer-area'>
                   <p className='text-[1.1rem] tracking-widest text-center text-blue-100'>
-                      Copyright © 2014 - 2024 <br/>powwebs@gmail.com
+                      Copyright © 2014 - 2026 <br/>powwebs@gmail.com
                   </p >
               </div>
             </footer>
