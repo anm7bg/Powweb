@@ -5,7 +5,9 @@ Disallow: /*_buildManifest.js$
 Disallow: /*_middlewareManifest.js$
 Disallow: /*_ssgManifest.js$
 Disallow: /_next/static/*
-Disallow: /favicon-new.ico
+Disallow: /author/*
+Disallow: /?custom-css=7f4a4713db
+Disallow: /?wordfence_logHuman=1&hid=0B3465FE3DF84DFB757AED733C599F27
 
 # Host
 Host: https://powweb.bg/

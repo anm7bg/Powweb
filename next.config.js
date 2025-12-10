@@ -71,11 +71,6 @@ module.exports = async (phase, { defaultConfig }) => {
           permanent: true,
         },
         {
-          source: '/bezplaten-analiz',
-          destination: '/bezplaten-analiz',
-          permanent: true,
-        },
-        {
           source: '/url-adresi-za-seo',
           destination: '/ustoychivi-url-adresi-za-seo',
           permanent: true,
