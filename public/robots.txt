@@ -4,7 +4,8 @@ Disallow: /*.json$
 Disallow: /*_buildManifest.js$
 Disallow: /*_middlewareManifest.js$
 Disallow: /*_ssgManifest.js$
-Disallow: /*.js$
+Disallow: /_next/static/*
+Disallow: /favicon-new.ico
 
 # Host
 Host: https://powweb.bg/
